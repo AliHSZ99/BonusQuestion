@@ -1,14 +1,50 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package bonusquestion;
 
 /**
  *
- * @author hussein
+ * @author Ali Zoubeidi
  */
 public class Question {
     
+   private String question;
+    
+    public Question() {
+        question = "Unkown";
+    }
+    
+    public Question(String question) {
+        this.question = question;
+    }
+    
+    public String getQuestion() {
+        return question;
+    }
+    
+    /**
+     * 
+     * @return 
+     */
+   @Override
+    public String toString() {
+        return "QUESTION: " + question;
+    }
+    
+    /**
+     *
+     * @param o
+     * @return
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Question)) {
+            return false;
+        } else {
+            Question objQuestion = (Question) o;
+            if (question.equalsIgnoreCase(objQuestion.question)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
 }

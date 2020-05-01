@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package bonusquestion;
 
 /**
  *
- * @author hussein
+ * @author Ali Zoubeidi
  */
 public class BonusQuestion {
 
@@ -15,7 +10,11 @@ public class BonusQuestion {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Question q = new Question("Are you a question?");
+        
+        q.getQuestion();
+        
+        System.out.println(q);
     }
     
 }
